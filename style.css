@@ -395,9 +395,25 @@ footer a:hover{ color:var(--texte); }
 
   .cours-grid{ grid-template-columns:1fr; }
   .club-wrap{ grid-template-columns:1fr; gap:32px; }
+  .etapes{ grid-template-columns:1fr; }
   .tarifs-grille.q4{ grid-template-columns:repeat(2,1fr); }
   .tarifs-grille.q2{ grid-template-columns:1fr; }
   .tarifs-bloc{ padding:36px 20px; }
   .contact-wrap{ grid-template-columns:1fr; gap:44px; }
   footer{ justify-content:center; text-align:center; }
+}
+
+@media (max-width:560px){
+  .tarifs-grille.q4{ grid-template-columns:1fr; }
+  .tarif-carte{ padding:20px 16px; }
+  .duo-prix{ gap:6px; }
+  .prix-val{ font-size:30px; }
+
+  .doc-bloc{ padding:28px 20px; flex-direction:column; text-align:center; }
+  .doc-apercu{ margin:0 auto; }
+  .doc-texte{ min-width:0; width:100%; }
+  .doc-cta{ justify-content:center; }
+  .doc-cta .btn{ width:100%; }
+
+  .etape{ padding:20px 18px; }
 }
