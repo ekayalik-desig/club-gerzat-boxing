@@ -253,11 +253,19 @@ nav ul li a:hover, nav ul li a.actif{ color:var(--texte); border-color:var(--rou
   max-width:980px; margin:48px auto 0; padding:0 40px;
 }
 .carte-acces h3{ font-family:var(--titre); font-size:24px; letter-spacing:.02em; margin-bottom:18px; }
+.acces-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:24px;
+}
 .carte-wrap{
   border:1px solid var(--bordure);
   overflow:hidden;
 }
 .carte-wrap iframe{ width:100%; height:340px; border:0; display:block; }
+.facade-wrap{
+  border:1px solid var(--bordure);
+  overflow:hidden;
+}
+.facade-wrap img{ width:100%; height:340px; object-fit:cover; display:block; }
 .carte-lien{
   display:inline-flex; align-items:center; gap:8px;
   margin-top:16px;
@@ -407,6 +415,7 @@ footer a:hover{ color:var(--texte); }
   .tarifs-grille.q2{ grid-template-columns:1fr; }
   .tarifs-bloc{ padding:36px 20px; }
   .contact-wrap{ grid-template-columns:1fr; gap:44px; }
+  .acces-grid{ grid-template-columns:1fr; gap:20px; }
   footer{ justify-content:center; text-align:center; }
 }
 
